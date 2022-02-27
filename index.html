@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="dist/index.js"></script>
+    <style>
+        .TituloAzul {
+            color: blue;
+        }
+
+        .TituloVerde {
+            color: green;
+        }
+
+        .Botones {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            display: inline-block;
+        }
+
+        .Verde {
+            background-color: green !important;
+        }
+
+        .Rojo {
+            background-color: red !important;
+        }
+
+        .Azul {
+            background-color: blue !important;
+        }
+
+        .Cafe {
+            background-color: brown !important;
+        }
+
+        .Hidden {
+            display: none;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+<h2 align="center">
+    Página de funciones Diego Peñalosa
+</h2>
+<h3 class="TituloAzul" align="center">
+    Menú de opciones
+</h3>
+
+<div align="center">
+    <button type="button" id="BtnBisiestos" class="Botones Verde">Calcular año bisiesto</button>
+    <button type="button" id="BtnTablas" class="Botones Rojo">Generador de tablas</button>
+    <button type="button" id="BtnArreglos" class="Botones Azul">Generar arreglo Aleatorio del 1 al 20</button>
+    <button type="button" id="BtnArreglosDos" class="Botones Cafe">Generar dos arreglo A Y B</button>
+    <button type="button" id="BtnTipoCambio" class="Botones Verde">Tipo de cambio</button>
+</div>
+
+<div align="center" id="Bisiestos" class="Hidden">
+    <h3 class="TituloAzul" align="center">
+        CALCULAR AÑOS BISIESTOS
+
+        <div align="center">
+            <input id="Year" type="text" placeholder="Indique el año a validar">
+            <button id="BtnCalcularBisiesto">Calcular</button>
+
+        </div>
+    </h3>
+</div>
+
+
+<div align="center" id="ArregloRand" class="Hidden">
+    <h3 class="TituloAzul" align="center">
+        Generar arreglo Aleatorio del 1 al 20
+    </h3>
+        <div id="ResultadoArreglo" align="center">
+
+
+        </div>
+    
+</div>
+
+
+
+<div align="center" id="Tablas" class="Hidden">
+    <h3 class="TituloAzul" align="center">
+        GENERDOR DE TABLAS
+    </h3>
+    <div align="center">
+        <input id="Filas" type="text" placeholder="Indique numero de filas">
+        <input id="Columnas" type="text" placeholder="Indique numero de columnas">
+        <button id="BtnGenerarTabla">Generar Tabla</button>
+
+    </div>
+    <div id="ResultadoTablas" align="center">
+    </div>
+
+</div>
+
+
+
+<div align="center" id="TipoCambio" class="Hidden">
+    <h3 class="TituloAzul" align="center">
+        CALCULAR TIPO CAMBIO BANCO DE MX ULTIMOS 5 DIAS
+    </h3>
+
+    <div id="ResultadoTipoCambio" align="center">
+    </div>
+</div>
+
+</html>
